@@ -7,8 +7,6 @@ import hashlib
 import re
 import unicodedata
 import urllib
-import os
-import binascii
 
 from google.appengine.datastore.datastore_query import Cursor
 from google.appengine.ext import blobstore
