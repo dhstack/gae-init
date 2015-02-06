@@ -233,10 +233,6 @@ def user_salt(user_db):
   return m.hexdigest()
 
 
-def password_salt(n_bytes=32):
-  return binascii.hexlify(os.urandom(n_bytes))
-
-
 def update_query_argument(name, value=None, ignore='cursor', is_list=False):
   ignore = ignore.split(',') if isinstance(ignore, str) else ignore or []
   arguments = {}

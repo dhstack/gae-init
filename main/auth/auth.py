@@ -371,7 +371,7 @@ def create_user_db(auth_id, name, username, email='', verified=False, **props):
       auth_ids=[auth_id] if auth_id else [],
       verified=verified,
       token=util.uuid(),
-      password_salt=util.password_salt(),
+      password_salt=util.uuid(),
       **props
     )
   user_db.put()
